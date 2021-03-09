@@ -1,10 +1,249 @@
-.bg{
-   width: 100%;
-    height: 600px;
-    margin-top: 100px;
-
-}
-.bg img{
+.head{
     width: 100%;
-    height: 600px;
+    /* border-bottom: 1px solid #dddddd; */
+}
+.head-main{
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    clear: both;
+}
+.logo-img{
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-left: 140px;
+    margin-top: 8px !important;
+    background: url(../img/ncp.jpg);
+    background-size: 100% 100%;
+}
+.website-name {
+    float: left;
+    margin-left: 10px;
+    line-height: 30px;
+    color: #009944;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+.backall{
+    width: 100%;
+}
+.main{
+    height: 550px;
+    clear: both;
+    background: url(../img/bg1.jpg);
+    background-size: 100% 100%;
+    margin: 0px 0 20px;
+    z-index: 5;
+}
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.left-img{
+    float: left;
+    width: 580px;
+    height: 450px;
+    margin-top: 150px;
+    background-image: url(../img/logoimg.png);
+}
+.login_dlbox {
+    min-height: 375px;
+    width: 430px;
+    background-color: #FFF;
+    border: 1px solid #dcdcdc;
+    float: right;
+    top: 70px;
+    position: relative;
+    z-index: 4;
+    background: #fff;
+    overflow: visible;
+}
+.dlbox {
+    width: 320px;
+    margin-top: 15px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btbox {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 15px;
+}
+.btbox h2 {
+    float: left;
+    font-size: 21px;
+    font-weight: 100;
+}
+.f14 {
+    float: right;
+    font-size: 14px;
+}
+.blue {
+    color: #006baf;
+    text-decoration: none;
+}
+.forget{
+    text-decoration: none;
+}
+.blue:hover{
+    color: #FF4E00;
+}
+.lrbox {
+    width: 320px;
+    height: auto;
+}
+.dlbox .dlxx {
+    width: 320px;
+    margin-bottom: 30px;
+}
+.dxk {
+    width: 320px;
+    height: 31px;
+    border: 1px solid #bfbfbf;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #f3f3f3;
+}
+.dlxx .dxk p {
+    color: #878787;
+    font-size: 14px;
+    width: 126px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 33px;
+    height: 18px;
+    line-height: 18px;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    display: block;
+}
+.dlxx .dxk .selected {
+    color: #009237;
+}
+.dlxx .dxk b {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/ico_gx1.png);
+    background-size: 18px 18px;
+}
+.srk {
+    width: 320px;
+    height: 35px;
+    position: relative;
+}
+.dlbox .dlxx input {
+    line-height: 16px;
+    height: 16px;
+    padding: 10px 36px 10px 10px;
+    font-size: 14px;
+    color: #555555;
+    vertical-align: middle;
+    float: left;
+}
+.srk input {
+    width: 98%;
+    height: 35px;
+    line-height: 33px;
+}
+.dlbox .dlxx .srk .k1 {
+    width: 272px;
+    float: left;
+}
+.dlbox .dlxx .srk .k2 {
+    width: 150px;
+}
+.dlbox .dlxx .srk .rzmimg {
+    width: 70px;
+    height: 36px;
+    float: left;
+    display: block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.rzmimg input{
+    width: 100px !important;
+    height: 35px !important;
+    margin-left: 7px !important;
+    margin-top: -15px !important;
+    font-size: 25px !important;
+    background-color: #a7d8eb;
+    font-family: Constantia;
+}
+.dlbox .check {
+    height: 27px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.dlbox .check p {
+    height: 27px;
+    line-height: 17px;
+    margin-right: 45px;
+    display: block;
+    float: left;
+}
+.dlbox .check p input {
+    width: 16px;
+    float: left;
+    margin-top: 5px;
+    display: inline;
+}
+button, input, textarea {
+    margin: 0;
+    vertical-align: middle;
+    outline: medium;
+    border: 1px solid #e1e1e1;
+}
+.dlbox .check label {
+    cursor: pointer;
+    height: 21px;
+    line-height: 21px;
+}
+.dlbox .anbox {
+    width: 320px;
+    height: 41px;
+}
+.main_top2 {
+    margin-top: 15px;
+}
+.an1 {
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+    background-color: #63b336;
+    display: inline-block;
+    filter: progid:DXImageTransform.Microsoft.radius(strength=5);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+.an1:hover{
+    background: #0A6D20;
+}
+.w100100 {
+    width: 100%;
+}
+.forgetpass{
+    float: right;
+    color: #999999;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.apendmessage{
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 14px;
 }

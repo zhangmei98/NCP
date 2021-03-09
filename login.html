@@ -1,14 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>登录</title>
-    <script src="js/jquery-2.2.4.js"></script>
     <link rel="stylesheet" href="style/css/login.css">
-
 </head>
 <body>
-<div class="bg">
-    <img src="style/img/bg.jpg"></div>
+<div class="head">
+    <div class="head-main">
+        <div class="logo-img" style="margin-top: 23px;">
+        </div>
+        <div class="website-name" style="margin-top: 20px;">
+            <a style="color: #009944;">寿光农产品资源展示网<br/>
+                <a style="color: #ff8a00; font-size: 17px;">SHOU GUANG AGRICULTURE PRODUCTS</a></a></div>
+    </div>
+</div>
+<div class="backall">
+    <div class="main">
+        <div class="w">
+            <div class="login_dlbox  flor ">
+                <div class="dlbox mt15">
+                    <div class="btbox">
+                        <h2 class="flol">会员登录</h2>
+                        <span class="f14 flor"><a href="register.html" class="blue">免费注册</a></span>
+                    </div>
+
+                    <div class="lrbox">
+                        <div class="dlxx ">
+                            <div class="srk">
+                                <input type="text" name="tellphone" class="k1" placeholder="请输入您的手机号">
+                            </div>
+                        </div>
+                        <div class="dlxx ">
+                            <div class="srk">
+                                <input type="password" name="password" class="k1" placeholder="请输入您的密码">
+                            </div>
+                            <div class="forgetpass"><a href="forgetPassword.html" class="forget">忘记密码？</a></div>
+                        </div>
+                        <div class="dlxx ">
+                            <div class="srk">
+                                <input class="k2" type="text" title="请输入验证码" placeholder="请输入验证码" id="imgcode">
+                                <p class="rzmimg">
+                                    <input class="k3" type="button" id="code" onclick="changeImg()"/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apendmessage"></div>
+                    <div class="anbox main_top2 main_bottom ">
+                        <button type="button" class="an1 w100100" id="loginSubmit">登录</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="javascript/jquery.min.js"></script>
+<script>
+    window.onload = function () {
+        changeImg();
+    };
+    var code;
+function changeImg() {
+        code = "";
+        var codeLength = 4;
+        var checkCode = document.getElementById("code");
+        var random = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
+            'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+        for (var i = 0; i < codeLength; i++) {
+            var index = Math.floor(Math.random() * 36);
+            code += random[index];
+        }
+        checkCode.value = code;
+    }
+
+</script>
 </body>
 </html>
